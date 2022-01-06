@@ -26,6 +26,8 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-w3c-html-validator": "^5.1.0",
-    "sass": "^1.43.5"
+    "jquery": "^3.6.0",
+    "sass": "~1.26.5",
+    "slick-carousel": "^1.8.1"
   }
 }

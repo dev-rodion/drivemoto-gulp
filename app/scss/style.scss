@@ -110,7 +110,8 @@
     padding: 15px 0 14px;
     transition: 0.3s;
     &:hover {
-      text-shadow: 0px 0.3px $main, 0.3px 0px $main, 0px -0.3px $main, -0.3px 0px $main;
+      text-shadow: 0px 0.3px $main, 0.3px 0px $main, 0px -0.3px $main,
+        -0.3px 0px $main;
       &::after {
         width: 100%;
       }
@@ -125,6 +126,109 @@
       height: 3px;
       background-color: $accent;
       transition: 0.3s;
+    }
+  }
+}
+
+.banner-section {
+  margin: 77px 0;
+  &__inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &__slider {
+    overflow: hidden;
+    width: 870px;
+    height: 46%;
+  }
+  &__slider-item {
+    display: none;
+    width: 100%;
+    &:first-child {
+      display: block;
+    }
+  }
+  &__slider-img-box {
+    position: relative;
+    padding-bottom: 46%;
+    background: $light;
+  }
+  &__slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.sale-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  max-width: 265px;
+  padding: 0 15px 25px;
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+  &__info {
+    color: #fff;
+    background-color: $accent;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 20px;
+  }
+  &__price {
+    padding: 3px 10px;
+    text-align: right;
+  }
+  &__price-new {
+    color: $accent;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+  }
+  &__price-old {
+    width: fit-content;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 18px;
+    color: $light;
+    background: url(../images/svg/old-price-line.svg) no-repeat right center;
+    background-size: cover;
+  }
+  &__img-box {
+    padding: 0 10px;
+    height: 175px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__footer {
+    font-size: 18px;
+    line-height: 22px;
+    span {
+      display: block;
+      font-weight: 700;
+      color: $accent;
     }
   }
 }

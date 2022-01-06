@@ -42,7 +42,11 @@ function styles() {
 }
 
 function scripts() {
-  return src(["app/js/main.js"]) // finds and selects files
+  return src([
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/slick-carousel/slick/slick.min.js",
+    "app/js/main.js"
+  ]) // finds and selects files
     .pipe(concat("script.min.js")) // concatenates the js files and sets the filename
     .pipe(uglify()) // uglifies js code
     .pipe(dest("app/js/")) // sends file to app/js directory
