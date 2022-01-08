@@ -291,4 +291,64 @@
   }
 }
 
+.categories {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: stretch;
+    min-height: 130px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    padding: 20px 20px 16px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      border-color: rgba(#cdcdcd, 0);
+      .categories__item-title {
+        color: $accent;
+      }
+    }
+  }
+  &__item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  &__item-title {
+    font-size: 23px;
+    line-height: 28px;
+    transition: 0.3s;
+    padding-bottom: 10px;
+  }
+  &__item-text {
+    position: relative;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 17px;
+    color: $light;
+    padding-right: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 6px;
+      background: url(../images/svg/black-arrow-right.svg) no-repeat center;
+      background-size: contain;
+      opacity: 0.6;
+    }
+  }
+  &__item-img {
+    max-height: 94px;
+  }
+}
+
 @import "_media.scss";
