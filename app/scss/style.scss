@@ -667,4 +667,33 @@
   }
 }
 
+.breadcrumbs {
+  margin: 40px 0;
+  &__item {
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 18px;
+    color: $light;
+    text-transform: capitalize;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 6px;
+      height: 100%;
+      background: url(../images/svg/gray-arrow-right.svg) no-repeat center;
+      background-size: contain;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+
 @import "_media.scss";
