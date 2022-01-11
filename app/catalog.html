@@ -74,7 +74,7 @@
                   <a class="menu-categories__link" href="catalog.html">Speedboats</a>
                 </li>
                 <li class="menu-categories__item">
-                  <a class="menu-categories__link" href="catalog.html">Jet skis</a>
+                  <a class="menu-categories__link menu-categories__link--active" href="catalog.html">Jet skis</a>
                 </li>
                 <li class="menu-categories__item">
                   <a class="menu-categories__link" href="catalog.html">Boats</a>
@@ -138,9 +138,43 @@
               </div>
             </div>
             <div class="catalog__inner">
-              <aside class="catalog__aside">
 
+              <aside class="catalog__aside aside-filter">
+                <div class="tabs-wrapper">
+                  <div class="tabs aside-filter__tabs">
+                    <a class="tab aside-filter__tab tab--active" href="#filter-tab-1">Parameters</a>
+                    <a class="tab aside-filter__tab" href="#filter-tab-2">Brands</a>
+                  </div>
+                  <div class="tabs-container aside-filter__container">
+                    <div id="filter-tab-1" class="tabs-content tabs-content--active aside-filter__content">
+                      <form class="aside-filter__form">
+                        <ul class="aside-filter__list">
+                          
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Availability</p>
+                            <div class="aside-filter__item-content">
+                              <div class="aside-filter__item-content-box">
+                                <input class="filter-style" type="checkbox" id="in-stock">
+                                <label for="in-stock">In Stock</label>
+                              </div>
+                            </div>
+                          </li>
+
+                          <li class="aside-filter__item-drop"></li>
+
+                          <li class="aside-filter__item"></li>
+
+                        </ul>
+                      </form>
+
+                    </div>
+                    <div id="filter-tab-2" class="tabs-content aside-filter__content">
+                      content-2
+                    </div>
+                  </div>
+                </div>
               </aside>
+
               <div class="catalog__content">
 
                 <div class="product-item__wrapper">
