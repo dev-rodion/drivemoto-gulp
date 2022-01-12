@@ -87,3 +87,157 @@ body {
 .page-section {
   margin-bottom: 80px;
 }
+
+.filter-style {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: none;
+  border: 1px solid $light;
+  border-radius: 1px;
+  margin-right: 12px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/svg/white-check-mark.svg) no-repeat center;
+    background-size: 8px;
+  }
+  &.checked {
+    background-color: $accent;
+    border-color: $accent;
+  }
+}
+
+.jq-selectbox {
+  &__select {
+    height: 40px;
+    padding: 8px 20px;
+    padding-right: 50px;
+    border: 1px solid #d7d9df;
+    min-width: 180px;
+  }
+  &__trigger {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 12px;
+  }
+  &__trigger-arrow {
+    width: 12px;
+    height: 100%;
+    background: url(../images/svg/gray-arrow-bottom.svg) no-repeat center;
+    background-size: contain;
+  }
+  &__dropdown {
+    top: 40px !important;
+    width: 100% !important;
+    background-color: #fff;
+    border: 1px solid #d7d9df;
+    border-top: none;
+    border-bottom: none;
+    li {
+      padding: 5px 20px;
+      border-bottom: 1px solid #d7d9df;
+    }
+  }
+}
+
+.jq-selectbox.opened .jq-selectbox__trigger-arrow {
+  background: url(../images/svg/gray-arrow-top.svg) no-repeat center;
+}
+
+.aside-filter__item-select .jq-selectbox {
+  &__select {
+    padding: 8px 20px;
+    padding-right: 35px;
+    height: fit-content;
+    min-width: fit-content;
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__trigger {
+    padding-left: 10px;
+  }
+  &__dropdown {
+    top: 35px !important;
+    font-size: 14px;
+    line-height: 17px;
+    border: 1px solid #d7d9df;
+    padding: 5px 0;
+    li {
+      color: rgba(0, 0, 0, 0.6);
+      border: none;
+      padding: 5px 15px;
+    }
+  }
+}
+
+.irs--flat {
+  width: 100%;
+  margin-top: 15px;
+  .irs-bar {
+    height: 3px;
+    background-color: $accent;
+  }
+  .irs-handle {
+    width: 8px;
+    height: 8px;
+    background-color: $accent;
+    border-radius: 50%;
+    i {
+      display: none !important;
+    }
+  }
+  .irs-line {
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+  .irs-grid {
+    display: none;
+  }
+  .irs-single,
+  .irs-from,
+  .irs-to {
+    background-color: $accent;
+    z-index: 1;
+  }
+  .irs-min,
+  .irs-max {
+    margin-top: 5px;
+    display: inline-block;
+    position: relative;
+    visibility: visible !important;
+    color: $main;
+    top: 35px !important;
+    font-size: 14px;
+    line-height: 17px;
+    background: none;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .irs-max {
+    float: right;
+  }
+  .irs-min::before,
+  .irs-max::before {
+    content: "from";
+    text-decoration: none;
+    color: $light;
+    margin-right: 10px;
+  }
+  .irs-max::before {
+    content: "to";
+  }
+  .irs-from:before,
+  .irs-to:before,
+  .irs-single:before {
+    border-top-color: $accent;
+  }
+}

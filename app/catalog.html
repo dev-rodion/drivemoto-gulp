@@ -149,27 +149,249 @@
                     <div id="filter-tab-1" class="tabs-content tabs-content--active aside-filter__content">
                       <form class="aside-filter__form">
                         <ul class="aside-filter__list">
-                          
                           <li class="aside-filter__item-drop">
                             <p class="aside-filter__item-title">Availability</p>
                             <div class="aside-filter__item-content">
-                              <div class="aside-filter__item-content-box">
-                                <input class="filter-style" type="checkbox" id="in-stock">
-                                <label for="in-stock">In Stock</label>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  In Stock
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  On order
+                                </label>
                               </div>
                             </div>
                           </li>
-
-                          <li class="aside-filter__item-drop"></li>
-
-                          <li class="aside-filter__item"></li>
-
-                        </ul>
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Types</p>
+                            <div class="aside-filter__item-content">
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="radio" name="type" checked="checked">
+                                  All
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="radio" name="type">
+                                  New
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="radio" name="type">
+                                  Sales
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Price</p>
+                            <div class="aside-filter__item-content">
+                              <input type="text" id="example_id" name="example_name" value="" data-type="double" data-min="100000" data-max="500000" data-from="100000" data-to="500000" data-grid="true" />
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-line">
+                            <div class="aside-filter__item-content">
+                              <p class="aside-filter__item-title">Power, h.p.</p>
+                              <select class="aside-filter__item-select">
+                                <option value="90">90</option>
+                                <option value="130">130</option>
+                                <option value="154">154</option>
+                                <option value="230">230</option>
+                                <option value="300">300</option>
+                              </select>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-line">
+                            <div class="aside-filter__item-content">
+                              <p class="aside-filter__item-title">Engine power, h.p.</p>
+                              <select class="aside-filter__item-select">
+                                <option value="90">55</option>
+                                <option value="130">60</option>
+                                <option value="154">65</option>
+                                <option value="230">70</option>
+                                <option value="300">75</option>
+                              </select>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-line">
+                            <div class="aside-filter__item-content">
+                              <p class="aside-filter__item-title">Max. speed</p>
+                              <select class="aside-filter__item-select">
+                                <option value="90">205</option>
+                                <option value="130">230</option>
+                                <option value="154">254</option>
+                                <option value="230">230</option>
+                                <option value="300">250</option>
+                              </select>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Brand</p>
+                            <div class="aside-filter__item-content">
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  BRP
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Spark 2
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  Spark 3 
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Model</p>
+                            <div class="aside-filter__item-content">
+                              <input class="aside-filter__item-input" type="text" placeholder="Enter the model">
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Sea-doo Spark 2
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  SeaDoo Spark 90 
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  SeaDoo GTI 155
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  SeaDoo GTR 230
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Country</p>
+                            <div class="aside-filter__item-content">
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Russia
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Germany
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  China
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  USA
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          </ul>
+                        <button class="aside-filter__btn" type="submit">
+                          Select
+                        </button>
+                        <a class="aside-filter__reset" href="#">
+                          Reset filter
+                        </a>
                       </form>
-
                     </div>
                     <div id="filter-tab-2" class="tabs-content aside-filter__content">
-                      content-2
+                      <form class="aside-filter__form">
+                        <ul class="aside-filter__list">
+                          <li class="aside-filter__item-drop">
+                            <p class="aside-filter__item-title">Brand</p>
+                            <div class="aside-filter__item-content">
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  BRP
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Spark 2
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  Spark 3 
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  BRP
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Spark 2
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  Spark 3 
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  BRP
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox" checked="checked">
+                                  Spark 2
+                                </label>
+                              </div>
+                              <div class="aside-filter__item-box">
+                                <label class="aside-filter__item-label">
+                                  <input class="filter-style" type="checkbox">
+                                  Spark 3 
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <button class="aside-filter__btn" type="submit">
+                          Select
+                        </button>
+                        <a class="aside-filter__reset" href="#">
+                          Reset filter
+                        </a>
+                      </form>
                     </div>
                   </div>
                 </div>

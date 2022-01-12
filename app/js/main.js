@@ -32,5 +32,11 @@ $(function () {
     $(this).toggleClass("product-item__favorite--active");
   });
 
-  $(".filter-style").styler();
+  $("input, select").styler();
+
+  $(".aside-filter__item-title").on("click", function () {
+    $(this).parent().toggleClass("aside-filter__item-drop--hidden")
+  });  
+
+  $("#example_id").ionRangeSlider();
 });
