@@ -1,24 +1,16 @@
-# gulp4
+# DRIVE MOTO STORE
 
-Building Gulp 4 for a convenient and fast site layout. <br />
-To use this build of Gulp 4, you need to have Node.js, npm and gulp installed globally.
+Main Page: https://dev.rodion.org.ua/drive-moto/<br />
+Catalog Page: https://dev.rodion.org.ua/drive-moto/catalog.html<br />
+Product Page: https://dev.rodion.org.ua/drive-moto/product-page.html<br />
 
-## Available Scripts
+This is a markup multipage site. I have made only 3 pages to learn how to markup store. 
 
-### `npm install`
+Technologies: HTML, CSS (SCSS), jQuery and git with GitHub. <br />
+I only did markup without CMS or backend languages. <br />
 
-Install all packages to the `node_modules` folder.<br />
-
-
-### `gulp`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-
-### `gulp build`
-
-Creates a production version of the project to the `dist` folder.
+### jQuery Plugins:
+"slick-slider" is a plugin for creating sliders. <br />
+"jquery-form-styles" is a plugin for styling form inputs (checkbox, radio) and select. <br />
+"ion-range-slider" is a plugin for styling input:range. <br />
+"rateyo" is a plugin for making a star rating. <br />
