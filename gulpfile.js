@@ -47,7 +47,7 @@ function scripts() {
     "node_modules/slick-carousel/slick/slick.min.js",
     "node_modules/jquery-form-styler/dist/jquery.formstyler.min.js",
     "node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
-    "node_modules/rateyo/lib/iife/rateyo.js",
+    "node_modules/rateyo/src/jquery.rateyo.js",
     "app/js/main.js"
   ]) // finds and selects files
     .pipe(concat("script.min.js")) // concatenates the js files and sets the filename
