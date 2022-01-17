@@ -1,4 +1,8 @@
 $(function () {
+  $("a").on("click", (e) => {
+    e.preventDefault();
+  });
+
   $(".banner-section__slider").slick({
     dots: true,
     arrows: true,
