@@ -1062,4 +1062,123 @@
   }
 }
 
+.card {
+  &__tabs {
+    margin-bottom: 100px;
+  }
+  &__tabs-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: auto;
+    background-color: #f0f0f4;
+    padding: 23px 0 18px;
+    margin-bottom: 50px;
+  }
+  &__tab {
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.6;
+    border-bottom: 2px solid rgba(#000, 0);
+    padding-bottom: 5px;
+    margin: 0 10px;
+    &.tab--active {
+      opacity: 1;
+      border-color: $accent;
+    }
+  }
+  &__tab-content {
+    display: none;
+    &.tabs-content--active {
+      display: block;
+    }
+  }
+  &__top-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__label-search {
+    position: relative;
+    width: fit-content;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba($main, 0.7);
+    margin-right: 100px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 30px;
+      height: 100%;
+      background: url(../images/svg/search.svg) no-repeat left center;
+    }
+  }
+  &__input-search {
+    width: 313px;
+    padding: 9px 37px 9px 17px;
+    margin-left: 10px;
+    background: #f0f0f4;
+    border-radius: 3px;
+    border: none;
+  }
+  &__label-pickup {
+    display: flex;
+    align-items: center;
+    margin-left: 54px;
+    color: rgba($main, 0.7);
+  }
+  &__input-pickup {
+    font-size: 17px;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba($main, 0.1);
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba($main, 0.7);
+  }
+  &__item--title {
+    font-size: 20px;
+    line-height: 24px;
+    color: $main;
+  }
+  &__item-address {
+    width: 270px;
+    margin-right: 50px;
+  }
+  &__item-workhours {
+    width: 200px;
+    margin-right: 55px;
+    span {
+      display: block;
+    }
+  }
+  &__item-available {
+    width: 140px;
+    margin-right: 100px;
+  }
+  &__item-number {
+    width: 100px;
+    margin-right: auto;
+  }
+  &__item-button button {
+    width: 120px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: $accent;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.3em;
+    border-radius: 3px;
+  }
+}
+
 @import "_media.scss";

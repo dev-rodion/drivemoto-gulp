@@ -88,14 +88,14 @@ body {
   margin-bottom: 80px;
 }
 
-.filter-style {
+.jq-radio,
+.jq-checkbox {
   position: relative;
   width: 14px;
   height: 14px;
   background: none;
   border: 1px solid $light;
   border-radius: 1px;
-  margin-right: 12px;
   &::before {
     content: "";
     display: block;
@@ -110,6 +110,9 @@ body {
   &.checked {
     background-color: $accent;
     border-color: $accent;
+  }
+  &.filter-style {
+    margin-right: 12px;
   }
 }
 
