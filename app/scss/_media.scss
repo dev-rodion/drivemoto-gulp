@@ -192,6 +192,39 @@
       margin-top: 40px;
     }
   }
+  .search {
+    &__tabs {
+      overflow-x: auto;
+      margin-bottom: 10px;
+    }
+    &__tab {
+      margin: 0 5px ;
+      padding: 5px 0;
+      background: none !important;
+      border-radius: 0;
+      &.tab--active {
+        border-bottom: 2px solid $accent;
+      }
+    }
+    &__form {
+      position: relative;
+    }
+    &__form-input {
+      padding-right: 50px;
+    }
+      &__form-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      font-size: 0;
+      padding: 0;
+      background: url(../images/svg/search-dark.svg) no-repeat center;
+      background-size: 23px;
+
+    }
+  }
 }
 
 @media (max-width: 640px) {

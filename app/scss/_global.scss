@@ -248,3 +248,9 @@ body {
     border-top-color: $accent;
   }
 }
+
+.mobile-overflow {
+  width: max-content;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
