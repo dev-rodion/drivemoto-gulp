@@ -10,8 +10,10 @@ body {
   font-weight: 400;
   color: $main;
   overflow-x: hidden;
-  overflow: hidden;
   min-height: 320px;
+  &.body--fixed {
+    overflow: hidden;
+  }
 }
 
 ::placeholder {

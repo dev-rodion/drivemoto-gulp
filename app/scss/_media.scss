@@ -52,12 +52,12 @@
     display: block;
     &__list {
       position: fixed;
-      top: 123px;
+      top: 0;
       left: 0;
       bottom: 0;
       z-index: 1000;
       min-width: 245px;
-      padding: 20px 15px 50px !important;
+      padding: 143px 15px 30px !important;
       background-color: #fff;
       overflow-y: auto;
       transform: translateX(-100%);
@@ -66,6 +66,10 @@
     &__item {
       position: relative;
       padding: 18px 0 18px 43px;
+    }
+    &__item--address {
+      margin-top: 20px;
+      font-weight: 700;
     }
     &__icon {
       position: absolute;
@@ -98,6 +102,26 @@
         transform: translateX(0%);
         transition: opacity 0.3s;
       }
+    }
+    &-line {
+      background-color: #f0f0f4;
+      overflow-x: auto;
+      padding: 0 10px;
+    }
+    &-line__list {
+      width: max-content;
+      min-width: 100%;
+      display: flex;
+      justify-content: space-around;
+      white-space: nowrap;
+    }
+    &-line__item {
+      padding: 15px 15px;
+    }
+    &-line__link {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
     }
   }
   .footer {

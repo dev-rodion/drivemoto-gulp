@@ -3,14 +3,16 @@ $(function () {
     e.preventDefault();
   });
 
-  $(".menu__btn").on("click", function() {
-    $(this).toggleClass("menu__btn--active")
-    $(".menu-mobile").toggleClass("menu-mobile--active")
-  })
-  $(".menu-mobile__bg").on("click", function(){
-    $(this).removeClass("menu__btn--active")
-    $(".menu-mobile").removeClass("menu-mobile--active")    
-  })
+  $(".menu__btn").on("click", function () {
+    $(this).toggleClass("menu__btn--active");
+    $(".menu-mobile").toggleClass("menu-mobile--active");
+    $('body').toggleClass("body--fixed")
+  });
+  $(".menu-mobile__bg").on("click", function () {
+    $(this).removeClass("menu__btn--active");
+    $(".menu-mobile").removeClass("menu-mobile--active");
+    $('body').removeClass("body--fixed")
+  });
 
   $(".banner-section__slider").slick({
     dots: true,
