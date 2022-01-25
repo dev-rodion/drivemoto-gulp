@@ -3,6 +3,15 @@ $(function () {
     e.preventDefault();
   });
 
+  $(".menu__btn").on("click", function() {
+    $(this).toggleClass("menu__btn--active")
+    $(".menu-mobile").toggleClass("menu-mobile--active")
+  })
+  $(".menu-mobile__bg").on("click", function(){
+    $(this).removeClass("menu__btn--active")
+    $(".menu-mobile").removeClass("menu-mobile--active")    
+  })
+
   $(".banner-section__slider").slick({
     dots: true,
     arrows: true,

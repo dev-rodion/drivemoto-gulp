@@ -1,6 +1,6 @@
+@import "reset";
 @import "vars";
 @import "fonts";
-@import "reset";
 @import "libs";
 @import "global";
 
@@ -48,6 +48,11 @@
     width: 100%;
     max-width: 450px;
   }
+  &__top {
+    position: relative;
+    z-index: 1999;
+    background-color: #fff;
+  }
   &__bottom {
     background-color: $dafault;
   }
@@ -67,6 +72,13 @@
     font-weight: 700;
     text-transform: capitalize;
   }
+  &__btn {
+    display: none;
+  }
+}
+
+.menu-mobile {
+  display: none;
 }
 
 .user-list {
@@ -1181,4 +1193,4 @@
   }
 }
 
-@import "_media.scss";
+@import "media";
