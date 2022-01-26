@@ -307,11 +307,19 @@
 
 .categories {
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 30px;
+    margin: 0 -15px;
   }
   &__item {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    margin: 15px;
     display: flex;
     align-items: stretch;
     min-height: 130px;
@@ -361,7 +369,9 @@
     }
   }
   &__item-img {
+    max-width: 50%;
     max-height: 94px;
+    object-fit: contain;
   }
 }
 

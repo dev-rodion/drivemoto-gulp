@@ -198,7 +198,7 @@
       margin-bottom: 10px;
     }
     &__tab {
-      margin: 0 5px ;
+      margin: 0 5px;
       padding: 5px 0;
       background: none !important;
       border-radius: 0;
@@ -212,7 +212,7 @@
     &__form-input {
       padding-right: 50px;
     }
-      &__form-btn {
+    &__form-btn {
       position: absolute;
       top: 0;
       right: 0;
@@ -222,7 +222,6 @@
       padding: 0;
       background: url(../images/svg/search-dark.svg) no-repeat center;
       background-size: 23px;
-
     }
   }
 }
@@ -259,6 +258,15 @@
       margin: 6px 20px;
     }
   }
-  .banner-section {
+}
+
+@media (max-width: 360px) {
+  .categories {
+    &__item {
+      padding: 20px 13px 12px 18px;
+    }
+    &__item-img {
+      max-width: 40%;
+    }
   }
 }
