@@ -310,18 +310,20 @@
           </div>
         </section>
 
-        <!-- <div class="products page-section">
+        <div class="products page-section">
           <div class="container">
             <div class="products__inner">
               <h3 class="products__title">Popular products</h3>
               <div class="tabs-wrapper">
                 <div class="tabs products__tabs">
-                  <a class="tab products__tab tab--active" href="#tab-11">spare parts</a>
-                  <a class="tab products__tab" href="#tab-12">motors</a>
-                  <a class="tab products__tab" href="#tab-13">tires</a>
-                  <a class="tab products__tab" href="#tab-14">electronics</a>
-                  <a class="tab products__tab" href="#tab-15">tools</a>
-                  <a class="tab products__tab" href="#tab-16">accessories</a>
+                  <div class="mobile-overflow">
+                    <a class="tab products__tab tab--active" href="#tab-11">spare parts</a>
+                    <a class="tab products__tab" href="#tab-12">motors</a>
+                    <a class="tab products__tab" href="#tab-13">tires</a>
+                    <a class="tab products__tab" href="#tab-14">electronics</a>
+                    <a class="tab products__tab" href="#tab-15">tools</a>
+                    <a class="tab products__tab" href="#tab-16">accessories</a>
+                  </div>
                 </div>
                 <div class="tabs-container products__container">
                   <div id="tab-11" class="tabs-content products__content tabs-content--active">
@@ -499,7 +501,13 @@
         <div class="banner page-section">
           <div class="container">
             <a class="banner__link" href="catalog.html">
-              <img class="banner__img" src="images/content/banner-big.jpg" alt="Banner">
+              <picture>
+                <source media="(min-width:540px)" srcset="images/content/banner-big.jpg">
+                <img class="banner__img" src="images/content/banner-small.jpg" alt="Banner">
+              </picture>
+              <picture>
+                <source media="(min-width: 800px)" srcsrc="images/content/banner-small.jpg">
+              </picture>
             </a>
           </div>
         </div>
@@ -510,12 +518,14 @@
               <h3 class="products__title">You may also like</h3>
               <div class="tabs-wrapper">
                 <div class="tabs products__tabs">
-                  <a class="tab products__tab" href="#tab-21">spare parts</a>
-                  <a class="tab products__tab" href="#tab-22">motors</a>
-                  <a class="tab products__tab" href="#tab-23">tires</a>
-                  <a class="tab products__tab tab--active" href="#tab-24">electronics</a>
-                  <a class="tab products__tab" href="#tab-25">tools</a>
-                  <a class="tab products__tab" href="#tab-26">accessories</a>
+                  <div class="mobile-overflow">
+                    <a class="tab products__tab" href="#tab-21">spare parts</a>
+                    <a class="tab products__tab" href="#tab-22">motors</a>
+                    <a class="tab products__tab" href="#tab-23">tires</a>
+                    <a class="tab products__tab tab--active" href="#tab-24">electronics</a>
+                    <a class="tab products__tab" href="#tab-25">tools</a>
+                    <a class="tab products__tab" href="#tab-26">accessories</a>
+                  </div>
                 </div>
                 <div class="tabs-container products__container">
                   <div id="tab-21" class="tabs-content products__content">
@@ -683,7 +693,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div> 
       </main>
 
       <footer class="footer">
