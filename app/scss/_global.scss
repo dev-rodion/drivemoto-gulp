@@ -228,8 +228,9 @@ body {
   .irs-single,
   .irs-from,
   .irs-to {
-    background-color: $accent;
-    z-index: 1;
+    // background-color: $accent;
+    // z-index: 1;
+    display: none;
   }
   .irs-min,
   .irs-max {

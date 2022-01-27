@@ -14,6 +14,21 @@ $(function () {
     $("body").removeClass("body--fixed");
   });
 
+  $(".catalog__filter-btngrid").on("click", function () {
+    $('.catalog__filter-btnline').removeClass("catalog__filter-btnline--active")
+    $(this).addClass("catalog__filter-btngrid--active");
+    $(".catalog__content").removeClass("catalog__content--line")
+  });
+  $(".catalog__filter-btnline").on("click", function () {
+    $('.catalog__filter-btngrid').removeClass("catalog__filter-btngrid--active")
+    $(this).addClass("catalog__filter-btnline--active");
+    $(".catalog__content").addClass("catalog__content--line")
+  });
+
+  $(".aside__btn").on("click", function (){
+    $(".catalog__aside").slideToggle(300)
+  })
+
   $(".banner-section__slider").slick({
     dots: true,
     arrows: true,
