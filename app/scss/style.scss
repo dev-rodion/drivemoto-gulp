@@ -1108,13 +1108,17 @@
     margin-bottom: 100px;
   }
   &__tabs-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     overflow-x: auto;
     background-color: #f0f0f4;
-    padding: 23px 0 18px;
     margin-bottom: 50px;
+    .mobile-overflow {
+      width: 100%;
+      min-width: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 23px 0 18px;
+    }
   }
   &__tab {
     font-size: 20px;
@@ -1164,6 +1168,9 @@
     background: #f0f0f4;
     border-radius: 3px;
     border: none;
+    &::placeholder {
+      font-size: 0;
+    }
   }
   &__label-pickup {
     display: flex;
@@ -1198,7 +1205,8 @@
     width: 200px;
     margin-right: 55px;
     span {
-      display: block;
+      display: inline-block;
+      width: 60px;
     }
   }
   &__item-available {
@@ -1209,8 +1217,11 @@
     width: 100px;
     margin-right: auto;
   }
-  &__item-button button {
+  &__item-button {
     width: 120px;
+  }
+  &__item-button button {
+    width: 100%;
     padding: 10px 20px;
     color: #fff;
     background-color: $accent;

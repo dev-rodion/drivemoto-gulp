@@ -251,6 +251,9 @@
       }
     }
   }
+  .card__label-search {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 940px) {
@@ -297,6 +300,97 @@
   .product {
     &-slider {
       max-width: 600px;
+    }
+  }
+  .card {
+    &__tabs-box {
+      margin: 0 -15px;
+      margin-bottom: 40px;
+      padding: 0px 15px;
+    }
+    &__top-line {
+      display: block;
+      label {
+        // display: block;
+        margin-left: 0;
+      }
+    }
+    &__label-search {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      &::after {
+        display: none;
+      }
+    }
+    &__input-search {
+      width: 100%;
+      margin: 0;
+      margin-top: 12px;
+      border: 1px solid #f0f0f4;
+      border-radius: 0;
+      background: none;
+      &::placeholder {
+        color: $light;
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+    &__label-pickup {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.5px solid $light;
+      padding: 8px;
+      margin-bottom: 6px;
+      .jq-radio {
+        order: 1;
+      }
+    }
+    &__item {
+      display: block;
+      div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-bottom: 15px;
+        &::before {
+          display: inline-block;
+          font-weight: 700;
+          width: 50%;
+        }
+      }
+      &-address::before {
+        content: "Address:";
+      }
+      &-workhours {
+        display: block !important;
+        &::before {
+          content: "Workhours:";
+          width: 100% !important;
+        }
+        span {
+          width: 50%;
+        }
+      }
+      &-available::before {
+        content: "Available:";
+      }
+      &-number::before {
+        content: "Number:";
+      }
+    }
+    &__item--title {
+      display: none;
+    }
+    &__item-button {
+      display: block !important;
+      button {
+        font-size: 15px;
+        border-radius: 0;
+        width: 100%;
+        padding: 15px;
+      }
     }
   }
 }
