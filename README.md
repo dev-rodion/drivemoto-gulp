@@ -1,8 +1,8 @@
 # DRIVE MOTO STORE
 
-Main Page: https://dev.rodion.org.ua/drive-moto/<br />
-Catalog Page: https://dev.rodion.org.ua/drive-moto/catalog.html<br />
-Product Page: https://dev.rodion.org.ua/drive-moto/product-page.html<br />
+Main Page: https://dev.rodion.org.ua/drivemoto/<br />
+Catalog Page: https://dev.rodion.org.ua/drivemoto/catalog.html<br />
+Product Page: https://dev.rodion.org.ua/drivemoto/product-page.html<br />
 
 This is a markup multipage site. I have made only 3 pages to learn how to markup store. 
 
